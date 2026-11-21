@@ -1,31 +1,118 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime config, prepared for yacineclaudeai/status
+# Free: public repo = unlimited GitHub Actions minutes, check every 5 min.
+owner: yacineclaudeai
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  # ---------- ERP (static page only, never /api: no Netlify functions) ----------
+  - name: ERP (page)
+    slug: erp
+    url: https://erp-yacine.netlify.app/index.html
+
+  # ---------- Sales landing pages (from ERP products.landing_url) ----------
+  - name: steptech / djibaflorida
+    slug: steptech-djibaflorida
+    url: https://steptech.myecomsite.net/djibaflorida
+  - name: steptech / IiC7
+    slug: steptech-iic7
+    url: https://steptech.myecomsite.net/IiC7
+  - name: steptech / pyjamasalopette
+    slug: steptech-pyjamasalopette
+    url: https://steptech.myecomsite.net/pyjamasalopette
+  - name: promochoc / 01Aj
+    slug: promochoc-01aj
+    url: https://www.promochoc.store/01Aj
+  - name: promochoc / DABDOUB
+    slug: promochoc-dabdoub
+    url: https://www.promochoc.store/DABDOUB
+  - name: promochoc / djibakatifa4D
+    slug: promochoc-djibakatifa4d
+    url: https://www.promochoc.store/djibakatifa4D
+  - name: promochoc / djibakatifanb
+    slug: promochoc-djibakatifanb
+    url: https://www.promochoc.store/djibakatifanb
+  - name: promochoc / DJIBAKATIFAWOW
+    slug: promochoc-djibakatifawow
+    url: https://www.promochoc.store/DJIBAKATIFAWOW
+  - name: promochoc / etoilepyjamaburbury
+    slug: promochoc-etoilepyjamaburbury
+    url: https://www.promochoc.store/etoilepyjamaburbury
+  - name: promochoc / jebbakatifa
+    slug: promochoc-jebbakatifa
+    url: https://www.promochoc.store/jebbakatifa
+  - name: promochoc / NOIRETROUGE
+    slug: promochoc-noiretrouge
+    url: https://www.promochoc.store/NOIRETROUGE
+  - name: promochoc / packpyjamastitch
+    slug: promochoc-packpyjamastitch
+    url: https://www.promochoc.store/packpyjamastitch
+  - name: promochoc / pyjama3pcoton
+    slug: promochoc-pyjama3pcoton
+    url: https://www.promochoc.store/pyjama3pcoton
+  - name: promochoc / pyjamaarieurimportationmotifcoeur
+    slug: promochoc-pyjamaarieurimportationmotifcoeur
+    url: https://www.promochoc.store/pyjamaarieurimportationmotifcoeur
+  - name: promochoc / pyjamaautomnecutetroispieces
+    slug: promochoc-pyjamaautomnecutetroispieces
+    url: https://www.promochoc.store/pyjamaautomnecutetroispieces
+  - name: promochoc / pyjamainspire
+    slug: promochoc-pyjamainspire
+    url: https://www.promochoc.store/pyjamainspire
+  - name: promochoc / pyjamakatifacinqpieces
+    slug: promochoc-pyjamakatifacinqpieces
+    url: https://www.promochoc.store/pyjamakatifacinqpieces
+  - name: promochoc / pyjamanemrihiver
+    slug: promochoc-pyjamanemrihiver
+    url: https://www.promochoc.store/pyjamanemrihiver
+  - name: promochoc / pyjamanoeud
+    slug: promochoc-pyjamanoeud
+    url: https://www.promochoc.store/pyjamanoeud
+  - name: promochoc / pyjamapouches
+    slug: promochoc-pyjamapouches
+    url: https://www.promochoc.store/pyjamapouches
+  - name: promochoc / pyjamaserpent
+    slug: promochoc-pyjamaserpent
+    url: https://www.promochoc.store/pyjamaserpent
+  - name: promochoc / pyjamavers
+    slug: promochoc-pyjamavers
+    url: https://www.promochoc.store/pyjamavers
+  - name: promochoc / robenemritendence
+    slug: promochoc-robenemritendence
+    url: https://www.promochoc.store/robenemritendence
+  - name: promochoc / ropekatifanoir
+    slug: promochoc-ropekatifanoir
+    url: https://www.promochoc.store/ropekatifanoir
+  # ---------- Delivery platforms (public pages only, no tokens) ----------
+  - name: HHD Express (Ecotrack)
+    slug: hhd-express
+    url: https://hhdexpress.ecotrack.dz
+  - name: Packers (Ecotrack)
+    slug: packers
+    url: https://packers.ecotrack.dz
+  - name: DHD
+    slug: dhd
+    url: https://platform.dhd-dz.com
+  - name: My Ecom Delivery
+    slug: my-ecom
+    url: https://ecom-dz.com
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  responseTime: "0 */6 * * *"
+  graphs: "0 0 * * *"
+  summary: "0 0 * * *"
+  staticSite: "0 1 * * *"
+  updateTemplate: "0 0 * * 0"
+  updates: "0 3 * * *"
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  baseUrl: /status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: Yacine Status
+  introTitle: "**حالة الصفحات** تاع البيع، الـERP وشركات التوصيل"
+  introMessage: كل 5 دقايق نشوفو إذا الصفحات راهي خدامة. إذا طاحت وحدة، يجيك ميساج في Telegram.
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
