@@ -490,19 +490,19 @@
     "url": "https://platform.dhd-dz.com",
     "icon": "https://icons.duckduckgo.com/ip3/platform.dhd-dz.com.ico",
     "slug": "dhd",
-    "status": "down",
-    "uptime": "47.07%",
-    "uptimeDay": "47.07%",
-    "uptimeWeek": "47.07%",
-    "uptimeMonth": "47.07%",
-    "uptimeYear": "47.07%",
-    "time": 408,
-    "timeDay": 408,
-    "timeWeek": 408,
-    "timeMonth": 408,
-    "timeYear": 408,
+    "status": "up",
+    "uptime": "9.77%",
+    "uptimeDay": "9.77%",
+    "uptimeWeek": "9.77%",
+    "uptimeMonth": "9.77%",
+    "uptimeYear": "9.77%",
+    "time": 469,
+    "timeDay": 469,
+    "timeWeek": 469,
+    "timeMonth": 469,
+    "timeYear": 469,
     "dailyMinutesDown": {
-      "2026-11-21": 0
+      "2026-11-21": 4
     }
   },
   {
