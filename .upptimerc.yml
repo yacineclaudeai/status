@@ -92,6 +92,10 @@ sites:
   - name: DHD
     slug: dhd
     url: https://platform.dhd-dz.com
+    # DHD answers 403 to robots: 403 still means its server is up
+    expectedStatusCodes:
+      - 200
+      - 403
   - name: My Ecom Delivery
     slug: my-ecom
     url: https://ecom-dz.com
